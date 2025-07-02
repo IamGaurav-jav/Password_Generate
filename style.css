@@ -1,0 +1,144 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #cbd5e1, #f1f5f9);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 450px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #374151;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.options {
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+#copy {
+  background-color: #10b981;
+}
+
+#copy:hover {
+  background-color: #047857;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  word-break: break-all;
+  color: #111827;
+  text-align: center;
+  background-color: #f3f4f6;
+  padding: 10px;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* fadeIn animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* dark mode */
+body.dark {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+body.dark .container {
+  background: #374151;
+  color: #f9fafb;
+}
+
+body.dark #result {
+  background-color: #4b5563;
+  color: #f9fafb;
+}
+
+body.dark button {
+  background-color: #3b82f6;
+}
+
+body.dark button:hover {
+  background-color: #2563eb;
+}
+
+body.dark #copy {
+  background-color: #22c55e;
+}
+
+body.dark label {
+  color: #f9fafb;
+}
+
+body.dark input[type="number"] {
+  background-color: #4b5563;
+  color: #f9fafb;
+  border: 1px solid #9ca3af;
+}
+
+body.dark input[type="checkbox"] {
+  accent-color: #3b82f6; /* modern browsers */
+}
+
+
+@media (max-width: 500px) {
+  .container {
+    margin: 30px 10px;
+    padding: 20px;
+  }
+}
