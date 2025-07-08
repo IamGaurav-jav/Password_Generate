@@ -16,15 +16,18 @@ A simple, responsive password generator built with HTML, CSS, and JavaScript. Us
 ✅ Dark mode toggle  
 ✅ Copy to clipboard button  
 ✅ Smooth animations  
+✅ **Password strength indicator**  
+✅ **Error messages for invalid input (length or no character type selected)**  
 
 ---
 
 ## 🎯 How it Works
 
-1. Enter the password length (minimum 4 recommended).  
+1. Enter the password length (minimum 4).  
 2. Select the character types you want to include.  
 3. Click **Generate Password** to create a random password.  
 4. Click **Copy to Clipboard** to copy the result.  
+5. **View password strength and error messages if any input is invalid.**
 
 ---
 
